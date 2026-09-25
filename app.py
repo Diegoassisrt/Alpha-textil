@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 ================================================================================
- MANUZ — GERENCIADOR DE PRECIFICAÇÃO E GESTÃO PARA SHOPEE
+ ALPHA TEXIL — GERENCIADOR DE PRECIFICAÇÃO E GESTÃO PARA SHOPEE
 ================================================================================
 Aplicativo web em Streamlit com autenticação, cadastro de usuários e
 perfis de acesso (Administrador / Operador-Vendedor).
@@ -11,8 +11,8 @@ Como executar:
     2. streamlit run app.py
 
 Login padrão (Administrador):
-    e-mail: admin@manuz.com.br
-    senha:  manuz2026
+    e-mail: admin@alphatextil.com.br
+    senha:  alpha2026
 
 Estrutura modular:
     app.py        -> ponto de entrada e roteamento por perfil
