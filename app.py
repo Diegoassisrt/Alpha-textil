@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 ================================================================================
- ALPHA TEXIL — GERENCIADOR DE PRECIFICAÇÃO E GESTÃO PARA SHOPEE
+  ALPHA TÊXTIL — GERENCIADOR DE PRECIFICAÇÃO E GESTÃO PARA SHOPEE
 ================================================================================
 Aplicativo web em Streamlit com autenticação, cadastro de usuários e
 perfis de acesso (Administrador / Operador-Vendedor).
@@ -40,7 +40,7 @@ from simulador import pagina_simulador
 
 
 st.set_page_config(
-    page_title="Manuz | Gerenciador de Precificação",
+    page_title="Alpha Têxtil | Gerenciador de Precificação",
     page_icon="🏭",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -55,11 +55,11 @@ aplicar_estilo()
 def inicializar_dados_negocio():
     if "produtos" not in st.session_state:
         st.session_state.produtos = [
-            {"codigo": "MZ001", "nome": "Camiseta Básica Algodão", "categoria": "Camisetas",
+            {"codigo": "ALT01", "nome": "Camiseta Básica Algodão", "categoria": "Camisetas",
              "custo_fabricacao": 18.50, "margem_desejada": 30.0},
-            {"codigo": "MZ002", "nome": "Moletom Canguru", "categoria": "Moletons",
+            {"codigo": "ALT02", "nome": "Moletom Canguru", "categoria": "Moletons",
              "custo_fabricacao": 45.00, "margem_desejada": 25.0},
-            {"codigo": "MZ003", "nome": "Legging Fitness", "categoria": "Fitness",
+            {"codigo": "ALT03", "nome": "Legging Fitness", "categoria": "Fitness",
              "custo_fabricacao": 22.00, "margem_desejada": 35.0},
         ]
 
@@ -89,8 +89,8 @@ def painel_principal():
 
     st.markdown(
         f"""
-        <div class="manuz-header">
-            <h1>🏭 MANUZ</h1>
+        <div class="alpha-textil-header">
+            <h1>🏭 ALPHA TÊXTIL</h1>
             <p>Gestão e Precificação — Vendas Shopee</p>
         </div>
         """,
@@ -98,7 +98,7 @@ def painel_principal():
     )
 
     with st.sidebar:
-        st.markdown("## 🏭 MANUZ")
+        st.markdown("## 🏭 ALPHA TÊXTIL")
         st.markdown(f"**{usuario['nome']}**")
         st.markdown(f"<span class='badge-perfil'>{usuario['perfil']}</span>", unsafe_allow_html=True)
         st.markdown("---")
